@@ -7,6 +7,7 @@ public with sharing class MassUpdater {
 	private final Schema.SObjectField field;
 	private final Object fieldValue;
 	private final List<SObject> objsToUpdate;
+	private final List<SObject> objsToUpdate11;
 	private ApexPages.Message currentMsg;
 	
 	public MassUpdater(List<SObject> objs, Schema.SObjectField f, Object value) {
