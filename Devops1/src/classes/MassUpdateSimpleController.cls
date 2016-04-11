@@ -16,6 +16,7 @@ public with sharing class MassUpdateSimpleController {
    private Object convertedFieldData;
    private List<SelectOption> picklistValues;
    private String currentStep;
+   private String currentStep11;
   
    
    public MassUpdateSimpleController(ApexPages.StandardSetController controller) {
