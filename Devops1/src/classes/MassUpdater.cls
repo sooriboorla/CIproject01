@@ -1,6 +1,6 @@
 /**
  * The massupdater is used to update a field of a set of records to a value
- * @author cchen
+ * @author cchen* @author cchen
  */
 
 public with sharing class MassUpdater {
