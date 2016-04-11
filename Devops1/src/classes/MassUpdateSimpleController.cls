@@ -1,6 +1,7 @@
 /**
  * This is the controller for the mass update app
  * @author cchen
+  * @author cchen
  */
 
 public with sharing class MassUpdateSimpleController {
