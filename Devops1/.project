@@ -14,4 +14,11 @@
 	<natures>
 		<nature>com.salesforce.ide.nature.default</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>git/Devops1/Lib/ant-salesforce.jar</name>
+			<type>1</type>
+			<location>C:/SF MIgration tool/ant-salesforce.jar</location>
+		</link>
+	</linkedResources>
 </projectDescription>
