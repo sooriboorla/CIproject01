@@ -1,4 +1,4 @@
-<apex:page standardController="Account" recordSetVar="unused" sidebar="true">
+<apex:page standardController="Account" recordSetVar="unused" sidebar="false">
 <apex:includeScript value="{!$Resource.UtilJS}" />
 <apex:form >
 <apex:pageBlock >
