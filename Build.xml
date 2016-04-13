@@ -1,0 +1,30 @@
+<project name="sfproject" default="retrieveCode" basedir="." xmlns:sf="antlib:com.salesforce">
+
+  
+<property file="build.properties"/>
+   
+<property environment="env"/>
+
+<taskdef uri="antlib:com.salesforce" resource="com/salesforce/antlib.xml">
+<classpath>
+<pathelement location="../ant-salesforce.jar"/>
+</classpath>
+</taskdef>
+
+<target name="retrieveCode">
+
+<!-- Retrieve the contents listed in the file codepkg/package.xml into the codepkg directory -->
+<sf:retrieve maxPoll="${sf.maxPoll}" serverurl="${sf.serverurl}" password="${sf.password}" username="${sf.username}" retrieveTarget="codepkg" unpackaged="components/package.xml"/>
+</target>
+
+
+
+<target name="deployRunAllTests">
+<!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
+<sf:deploy rollbackOnError="true" deployRoot="/src" maxPoll="${sf.maxPoll}" serverurl="${sf.serverurl}" password="${sf.password}" username="${sf.username}">
+</sf:deploy>
+
+</target>
+
+
+</project>
