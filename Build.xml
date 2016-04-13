@@ -21,7 +21,7 @@
 
 <target name="deployRunAllTests">
 <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-<sf:deploy rollbackOnError="true" deployRoot="/src" maxPoll="${sf.maxPoll}" serverurl="${sf.serverurl}" password="${sf.password}" username="${sf.username}">
+<sf:deploy rollbackOnError="true" deployRoot="Devops1\src" maxPoll="${sf.maxPoll}" serverurl="${sf.serverurl}" password="${sf.password}" username="${sf.username}">
 </sf:deploy>
 
 </target>
