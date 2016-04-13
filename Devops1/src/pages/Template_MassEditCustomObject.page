@@ -1,4 +1,4 @@
-<apex:page standardController="abc__c" recordSetVar="unused" sidebar="false">
+<apex:page standardController="case" recordSetVar="unused" sidebar="false">
 
 <!-- for this page to work with a specific custom object, change standController="entityname" to custom object api name  
     For example, if custom object name is Warehouse__c, change first part of the first line to standardController="warehouse__c" -->
